@@ -26,10 +26,7 @@ int main() {
                 carac = ((rand() % 9) + '1');
                 break;
             case 3:
-                if (rand() % 2 == 0)
-                    carac = '!';
-                else
-                    carac = '?';
+                carac = (rand() % 2) ? '!' : '?';
         }
         printf("%c", carac);
     }
